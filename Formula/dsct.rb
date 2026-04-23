@@ -1,25 +1,25 @@
 class Dsct < Formula
   desc "LLM-friendly packet dissector CLI"
   homepage "https://github.com/higebu/dsct"
-  version "0.2.9"
+  version "0.2.10"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/higebu/dsct/releases/download/v0.2.9/dsct-aarch64-apple-darwin.tar.xz"
-      sha256 "7cda0e93c76dbc3968a34dfe9d2766d7a8056ae3b001bb7536a42a94af198509"
+      url "https://github.com/higebu/dsct/releases/download/v0.2.10/dsct-aarch64-apple-darwin.tar.xz"
+      sha256 "8ca402a33b1cde1fe38afe98f79ed9de065982a2acbcf8cf34d5dc46f2a690a3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/higebu/dsct/releases/download/v0.2.9/dsct-x86_64-apple-darwin.tar.xz"
-      sha256 "a05c85d65ad02cc77035c08a974d832ab83dfd33de4a8ad08fe2316ddbf99e82"
+      url "https://github.com/higebu/dsct/releases/download/v0.2.10/dsct-x86_64-apple-darwin.tar.xz"
+      sha256 "bcf07d25b54c4408f8793ac21bdce608698a46ff99b2c6161cfb1a5ddc89e26b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/higebu/dsct/releases/download/v0.2.9/dsct-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1e78495c9a8dd83d8636d2e3368ba9cd6b1e3c5668f6fadccdae2e141e70940d"
+      url "https://github.com/higebu/dsct/releases/download/v0.2.10/dsct-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a4224efa27f6ba519d5b887fb6c5dd87e896d9c316fb04adeb7c56a8dbc50f18"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/higebu/dsct/releases/download/v0.2.9/dsct-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3aff0a22abe411b792f862d4f8f0c7f662ee2d0187cbc2da7b07a67d32aeff84"
+      url "https://github.com/higebu/dsct/releases/download/v0.2.10/dsct-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "69fef3771fea96eb4b61548aa2e999bb80350cedc69e3d81a015186badebccc0"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
